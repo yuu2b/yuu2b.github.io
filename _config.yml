@@ -5,7 +5,7 @@
 # Site
 title: yuu
 subtitle:
-description: 说着闭上了双眼
+description: 又一个blog站点
 keywords:
 author: yuu
 language: zh-cn
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: /
+url: / https://yuu2b.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -88,7 +88,7 @@ deploy:
 # backup
 backup:
   type: git
-  message: backup my blog of https://yourname.github.io/
+  message: backup my blog of https://yuu2b.github.io/
   repository:
     github: https://github.com/yuu2b/yuu2b.github.io.git,backup
     # coding: https://git.coding.net/hojun/hojun.git,backup
