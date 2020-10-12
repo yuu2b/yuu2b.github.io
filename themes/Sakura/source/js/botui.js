@@ -22,11 +22,11 @@ function bot_ui_ini() {
     var botui = new BotUI("hello-mashiro")
     botui.message.add({
         delay: 800,
-        content: "Hi, there👋"
+        content: "Hi, Hi, Hi👋"
     }).then(function () {
         botui.message.add({
             delay: 1100,
-            content: "这里是 Mashiro"
+            content: "这里是 yuu"
         }).then(function () {
             botui.message.add({
                 delay: 1100,
@@ -65,32 +65,32 @@ function bot_ui_ini() {
         secondpart = function () {
             botui.message.add({
                 delay: 1500,
-                content: "目前就读于上海财经大学"
+                content: "目前在中字头某局工作"
             }).then(function () {
                 botui.message.add({
                     delay: 1500,
-                    content: "向往技术却误入商科，但后来喜欢上了经济学…"
+                    content: "毕业时不小心入了工地的坑..."
                 }).then(function () {
                     botui.message.add({
                         delay: 1200,
-                        content: "因为数据分析也需要Coder嘛"
+                        content: "然后又阴差阳错会了一点程序😂"
                     }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主攻 R 语言和 Python，略懂 STATA，偶尔也折腾 HTML/CSS/JavaScript/PHP"
+                            content: "写过一点Android，现在似乎在写C#，近两年在折腾各种blog，（网上大佬们写的是真的棒😀）"
                         }).then(function () {
                             botui.message.add({
                                 delay: 1500,
-                                content: "研究的方向，是经济/金融方向的数据分析（data science）以及机器学习（machine learning）"
+                                content: "准备去读研，离开这个大坑，也是想再提高一点自己，工作了才发现工作生活好无聊啊😭"
                             }).then(function () {
                                 botui.message.add({
                                     delay: 1800,
-                                    content: "喜欢画画，希望有一天能够被称为画师"
+                                    content: "喜欢音乐，曾今偶像是awf，向往宇宙，有生之年不知道能不能上一次太空。🤤"
                                 }).then(function () {
                                     botui.action.button({
                                         delay: 1100,
                                         action: [{
-                                            text: "为什么叫Mashiro呢？ 🤔",
+                                            text: "为什么叫yuu呢？ 🤔",
                                             value: "why-mashiro"
                                         }]
                                     }).then(function (a) {
@@ -106,12 +106,12 @@ function bot_ui_ini() {
         thirdpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "Mashiro以及站名都来自一部动画，因为和主角有一样的爱好~ 如果有兴趣可以找找首页上的视频~"
+                content: "这个很简单，来自我的名字"
             }).then(function () {
                 botui.action.button({
                     delay: 1500,
                     action: [{
-                        text: "为什么是白猫呢？ 🤔",
+                        text: "为什么是樱花庄呢？ 🤔",
                         value: "why-cat"
                     }]
                 }).then(function (a) {
@@ -122,11 +122,11 @@ function bot_ui_ini() {
         fourthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "因为对GitHub有种执念… "
+                content: "如果没看过这部可以去看！！ "
             }).then(function () {
                 botui.message.add({
                     delay: 1100,
-                    content: "而且我真的是猫控！"
+                    content: "而且而且这个主题和这部感觉挺搭配的有木有"
                 }).then(function () {
                     botui.action.button({
                         delay: 1500,
@@ -143,11 +143,11 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "emmmm，看备案信息你就知道了=.= 本来想要zheng.xin的，但50万真买不起。。"
+                content: "nzynl 是 no zy no life 的缩写 hia hia hia，选top有一种暗示着向上、进取的意思。（emmmm其实主要是你因为便宜）"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,
-                    content: "那么，仔细看看我的博客吧？ ^_^"
+                    content: "那么，你就在此好好逛逛把？ ^_^"
                 })
             })
         } 
