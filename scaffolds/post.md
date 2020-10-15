@@ -2,7 +2,7 @@
 title: {{ title }}
 date: {{ date }}
 author: yuu
-avatar: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/avatar.jpg
+avatar: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/custom/avatar.jpg
 authorLink: nzynl.top
 authorAbout: 
 authorDesc: 

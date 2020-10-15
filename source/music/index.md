@@ -1,23 +1,44 @@
 ---
 title: music
-date: 2018-12-20 23:14:28
+date: 2020-10-12 20:59:28
 keywords: 喜欢的音乐
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/music.jpg
+photos: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/banner/music.jpg
 ---
 {% raw %}
 <meting-js
   server="netease"
   type="playlist"
-  id="2731690811"
+  id="166164092"
   mutex="true">
 </meting-js>
 
 <meting-js
   server="netease"
   type="playlist"
-  id="419239189"
+  id="6683129"
+  mutex="true">
+</meting-js>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="445788696"
+  mutex="true">
+</meting-js>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="128871831"
+  mutex="true">
+</meting-js>
+
+<meting-js
+  server="netease"
+  type="playlist"
+  id="67144428"
   mutex="true">
 </meting-js>
 {% endraw %}

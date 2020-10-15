@@ -143,7 +143,7 @@ function bot_ui_ini() {
         fifthpart = function () {
             botui.message.add({
                 delay: 1E3,
-                content: "nzynl 是 no zy no life 的缩写 hia hia hia，选top有一种暗示着向上、进取的意思。（emmmm其实主要是你因为便宜）"
+                content: "nzynl 是 no zy no life 的缩写 hia hia hia，选top有一种暗示着向上、进取的意思。（emmmm其实主要是因为便宜）"
             }).then(function () {
                 botui.message.add({
                     delay: 1600,

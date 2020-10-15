@@ -1,10 +1,10 @@
 ---
 title: comment
-date: 2018-12-20 23:13:48
+date: 2020-10-12 20:54:48
 keywords: 留言板
 description: 
 comments: true
-photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/comment.jpg
+photos: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/banner/comment.jpg
 ---
 {% raw %}
 <div class="entry-content">

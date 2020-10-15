@@ -13,21 +13,70 @@
   <div class="site-info">
     <div class="footertext">
       <div class="img-preload">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/wordpress-rotating-ball-o.svg">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/disqus-preloader.svg">
+        <img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/other/wordpress-rotating-ball-o.svg">
+        <img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/other/disqus-preloader.svg">
       </div>
-      <p style="color: #666666;">&copy 2020</p>
+      <p style="color: #666666;">&copy 2020 </p>
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/honjun/hexo-theme-sakura" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://2heng.xin/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Mashiro</a>&<a href="https://www.hojun.cn/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Hojun</a>, modified by <a href="https://nzynl.top/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yuu</a>, Powered by Hexo, Hosted by Github Pages</a>
+        <span style="color: #b9b9b9;">
+          Theme <a href="https://github.com/yuu2b/yuu2b.github.io/tree/backup" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">Sakura</a>
+          <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i>
+          powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
         </span>
       </p>
+<!--      <访客数-->
+      <div>本站总访问数： <span id="busuanzi_value_site_uv"></span></div>
       <!--网站运行时间-->
       <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
       <!--底部动态字-->
       <div id="binft"></div>
     </div>
+    <div class="changeSkin-gear no-select" style="bottom: -999px;">
+      <div class="keys">
+        <span id="open-skinMenu">
+		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL
+        </span>
+      </div>
+    </div>
+    <div class="skin-menu no-select">
+      <div class="theme-controls row-container">
+        <ul class="menu-list">
+          <li id="white-bg">
+            <i class="fa fa-television" aria-hidden="true"></i>
+          </li><!--Default-->
+          <li id="sakura-bg">
+            <i class="iconfont icon-sakura"></i>
+          </li><!--Sakura-->
+          <li id="gribs-bg">
+            <i class="fa fa-slack" aria-hidden="true"></i>
+          </li><!--Grids-->
+          <li id="KAdots-bg">
+            <i class="iconfont icon-dots"></i>
+          </li><!--Dots-->
+          <li id="totem-bg">
+            <i class="fa fa-superpowers" aria-hidden="true"></i>
+          </li><!--Orange-->
+          <li id="pixiv-bg">
+            <i class="iconfont icon-pixiv"></i>
+          </li><!--Start-->
+          <li id="bing-bg">
+            <i class="iconfont icon-bing"></i>
+          </li><!--Bing-->
+          <li id="dark-bg">
+            <i class="fa fa-moon-o" aria-hidden="true"></i>
+          </li><!--Night-->
+        </ul>
+      </div>
+      <div class="font-family-controls row-container">
+        <button type="button" class="control-btn-serif selected" data-mode="serif"
+                onclick="mashiro_global.font_control.change_font()">Serif</button>
+        <button type="button" class="control-btn-sans-serif" data-mode="sans-serif"
+                onclick="mashiro_global.font_control.change_font()">Sans Serif</button>
+      </div>
+    </div>
+    <canvas id="night-mode-cover"></canvas>
   </div><!-- .site-info -->
 </footer>
 
@@ -109,7 +158,7 @@ $(document).ready(function() {
     mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
     seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
     snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
-    document.getElementById("timeDate").innerHTML = "本站在我的折磨下已运行 "+dnum+" 天 ";
+    document.getElementById("timeDate").innerHTML = "本站在我的折磨下已努力の运行了 "+dnum+" 天 ";
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
   }
   setInterval("createtime()",250);
