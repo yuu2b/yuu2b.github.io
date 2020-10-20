@@ -47,6 +47,7 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(0).jpg.webp
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(1).jpg.webp
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(2).jpg.webp
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(3).jpg.webp
@@ -54,7 +55,6 @@ bg:
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(5).jpg.webp
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(6).jpg.webp
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(7).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(8).jpg.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass:
