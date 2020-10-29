@@ -18,7 +18,7 @@ menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
-    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    英文: {path: /categories/英文/, fa: fa-file-text-o },
     资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     随想: {path: /categories/随想/, fa: fa-commenting-o },
     转载: {path: /categories/转载/, fa: fa-book }
@@ -31,13 +31,13 @@ menus:
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
-  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+#  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
   } }
-  客户端: { path: /client/, fa: fa-android faa-vertical }
+#  客户端: { path: /client/, fa: fa-android faa-vertical }
   RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
 
 
@@ -104,7 +104,7 @@ aplayer:
   fixed: true
   autoplay: false
   loop: all
-  order: random
+  order: list
   preload: auto
   volume: 0.7
   mutex: true

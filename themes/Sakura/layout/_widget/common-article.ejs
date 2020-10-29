@@ -31,7 +31,7 @@
     <main id="main" class="site-main" role="main">
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
         <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        <!--<div class="toc-entry-content">--><!-- 套嵌目录使用（主要为了支援评论）-->
         <% if (!post.photos[0]){ %>
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
@@ -70,7 +70,7 @@
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
           <% if (post.next) { %>
-            <div class="post-nepre half previous">
+            <div class="post-nepre half previous"></div>
           <% } else { %>
             <div class="post-nepre full previous">
           <% } %>
@@ -86,13 +86,13 @@
                 <hr>
               </div>
             </a>
-          </div>
+            </div>
         <% } %>
         <% if (post.next){ %>
           <% if (post.prev) { %>
-            <div class="post-nepre half next">
+              <div class="post-nepre half next"></div>
           <% } else { %>
-            <div class="post-nepre full next">
+          <div class="post-nepre full next">
           <% } %>
             <a href="<%- url_for(post.next.path) %>" rel="next">
               <div class="background">

@@ -689,7 +689,8 @@ to {
 }
 body {
     margin:0;
-    font:300 17px;
+    font-weight: 300;
+    font-size: 17px;
     text-shadow:0 0 1px rgba(0,0,0,.1)
 }
 input:-webkit-autofill {
@@ -3050,7 +3051,7 @@ span.time {
 .ar-time {
     position:absolute;
     left:-18px;
-    top:px;
+    top:0;
     margin-top:3px
 }
 #archives-content {
@@ -3952,13 +3953,13 @@ li.feature-2 {
         top: 98px !important;
     }
     .top-social_v2 li {
-        margin-right: 0px !important; 
+        margin-right: 0 !important;
         cursor: url(https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cursor/ayuda.cur),auto !important;
     }
 }
 #bgvideo {
     position: absolute;
-    top: 0px !important;
+    top: 0 !important;
     left: 0;
     margin: 0;
     padding: 0;
