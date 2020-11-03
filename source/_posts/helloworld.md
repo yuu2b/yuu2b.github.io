@@ -18,3 +18,5 @@ photos: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/helloworld/1.jpg
 以前的博客建了也没写什么东西，还是部署在某讯云的服务器上，后来我看着来气直接把服务器重装系统了哈哈哈，<br/>
 以后还是多写点东西把，就像上学时老师常说的 ‘好记性不如烂笔头’嘛。<br/>
 请多指教
+
+
