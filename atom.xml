@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/%20https://nzynl.top/"/>
-  <updated>2020-10-29T08:20:37.292Z</updated>
+  <updated>2020-11-27T08:25:26.483Z</updated>
   <id>/ https://nzynl.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo上传出错</title>
+    <link href="/%20https://nzynl.top/2020/11/27/hexo%E4%B8%8A%E4%BC%A0%E5%87%BA%E9%94%99/"/>
+    <id>/ https://nzynl.top/2020/11/27/hexo上传出错/</id>
+    <published>2020-11-27T08:07:01.000Z</published>
+    <updated>2020-11-27T08:25:26.483Z</updated>
+    
+    <summary type="html">
+    
+      解决 hexo d 出现No such device or address错误
+    
+    </summary>
+    
+      <category term="技术" scheme="/%20https://nzynl.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="blog" scheme="/%20https://nzynl.top/tags/blog/"/>
+    
+  </entry>
   
   <entry>
     <title>Obama&#39;s speech</title>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">archive_a | Sleeplessness</title>
+  <title itemprop="name">hexo上传出错 | Sleeplessness</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -389,104 +389,130 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
-<div id="content" class="site-content">
-  <div id="main">
-    <header class="page-header">
-      <h1 class="cat-title">
-      归档</h1>
-      <span class="cat-des">
-        <p>
-        Archives</p>
-      </span>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/hexo上传出错/yly.jpg);" src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/hexo上传出错/yly.jpg">
+    </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      hexo上传出错</h1>
+      <p class="entry-census">
+        <span>
+          <a href="nzynl.top">
+            <img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/custom/avatar.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="nzynl.top">yuu</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-11-27<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
-    <div id="main-part">
-      <article class="art">
-        <div class="art-main">
-          <div class="art-content">
-            <div id="archives">
-              <p style="text-align:right;">
-                [<span id="al_expand_collapse" style="cursor: s-resize;">
-                全部展开/收缩</span>
-              ]</p>
-              
-              
-              
-              
-              
-                
-                <h3 class="al_year">2020年</h3>
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      11月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/11/27/hexo上传出错/">
-                          <span style="color:#0bf;">
-                          27日16:07:01</span>
-                          hexo上传出错
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
-              
-              
-              
-              
-                
-                <ul class="al_mon_list">
-                  <li class="al_li">
-                    <span class="al_mon" style="cursor: s-resize;">
-                      10月(<span id="post-num">
-                      3</span>
-                    篇文章)</span>
-                    <ul class="al_post_list" style="">
-              
-                      <li>
-                        <a href="/2020/10/28/Obama-s-speech/">
-                          <span style="color:#0bf;">
-                          28日09:51:04</span>
-                          Obama&#39;s speech
-                        </a>
-                      </li>
-                      
-              
-              
-              
-              
-              
-                      <li>
-                        <a href="/2020/10/13/helloworld/">
-                          <span style="color:#0bf;">
-                          13日13:02:23</span>
-                          helloworld
-                        </a>
-                      </li>
-                      
-                    </ul>
-                  </li>
-                </ul>
-              
-              
+  </div>
+
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content">--><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <p>hexo写好页面后使用 <code>hexo d</code> 命令上传。执行过程中弹出github的登陆窗口，确认账号密码正确后始终报以下错误：</p>
+<pre><code>Error: Logon failed, use ctrl+c to cancel basic credential prompt.
+bash: /dev/tty: No such device or address
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for &#39;https://github.com&#39;: No such file or directory
+FATAL Something&#39;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
+</code></pre><p>因为之前都是正常的，应该不是我瞎操作导致的。网上查过一遍后发现删除.git .git_deploy 文件夹等方法均不能解决问题。然后我用小乌龟上传文件测试发现git还是会弹出登陆窗口，输入密码后似乎还是会产生错误，因为之后小乌龟又弹出了连接github的账户密码输入框。到此我基本判断是git出问题了。正巧<strong>此时我收到一封邮件</strong>：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/hexo上传出错/1.jpg" alt="github邮件"><br>啊这，我回想了一下我的git是一年前装的，那就升级一下吧。于是安装好最新的git后成功解决。特此记录一下。</p>
+
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/custom/donate/AliPayQR.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/custom/donate/WeChanQR.jpg"></li>
+              </ul>
             </div>
           </div>
         </div>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
       </article>
-    </div>
-  </div>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+          <div class="post-nepre full next">
+          
+            <a href="/2020/10/28/Obama-s-speech/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/Obama' speech/Obama.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/Obama' speech/Obama.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                Obama&#39;s speech</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "OVpFcstylRgjfpUaV1Pi4nE0-9Nh9j0Va",
+        appKey: "6sNPL9IFrjh0fscHTfH2xXLV",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="nzynl.top" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/custom/avatar.jpg" itemprop="image" alt="yuu" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="nzynl.top" itemprop="url" rel="author">yuu</a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i>一切节省，归根到底都归结为时间的节省。</p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
+
 
     </div>    
     <div class="ins-search">
