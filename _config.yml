@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: yuu
+title: Sleeplessness
 subtitle:
 description: 又一个blog站点
 keywords:
@@ -27,6 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - game/pages/**
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -79,10 +80,8 @@ theme: Sakura
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: 
-    # github: git@github.com:honjun/honjun.github.io.git
+  repo:
     github: https://github.com/yuu2b/yuu2b.github.io.git
-    #coding: https://gitee.com/nzynl/blog.git
   branch: master
 
 # backup
@@ -91,7 +90,6 @@ backup:
   message: backup my blog of https://yuu2b.github.io/
   repository:
     github: https://github.com/yuu2b/yuu2b.github.io.git,backup
-    # coding: https://git.coding.net/hojun/hojun.git,backup
 
 #RSS
 feed:

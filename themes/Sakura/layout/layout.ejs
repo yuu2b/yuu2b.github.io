@@ -1,6 +1,35 @@
 <%- partial('_partial/head') %>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-  <div class="loader loader-ball is-active" shadow></div>
+
+<!--  <div class="loader loader-ball is-active" shadow></div>-->
+<div class="ele-container">
+  <div class="ele-wrapper">
+    <div class="ele-tail"></div>
+    <div class="ele-body">
+      <div class="ele-head">
+        <div class="ele-eyebrows"></div>
+        <div class="ele-eyes"></div>
+        <div class="ele-mouth"></div>
+        <div class="ele-fang-front"></div>
+        <div class="ele-fang-back"></div>
+        <div class="ele-ear"></div>
+      </div>
+    </div>
+    <div class="ele-leg-1 ele-leg-back">
+      <div class="ele-foot"></div>
+    </div>
+    <div class="ele-leg-2 ele-leg-front">
+      <div class="ele-foot"></div>
+    </div>
+    <div class="ele-leg-3 ele-leg-back">
+      <div class="ele-foot"></div>
+    </div>
+    <div class="ele-leg-4 ele-leg-front">
+      <div class="ele-foot"></div>
+    </div>
+  </div>
+</div>
+
   <div class="scrollbar" id="bar"></div>
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
@@ -28,7 +57,7 @@
   <!--  核心价值观-->
 <!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js"></script>-->
   <!--  爱心-->
-  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+<!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>-->
   <!--烟花-->
 <!--    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>-->
 <!--    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>-->
@@ -43,17 +72,22 @@
 <!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/sakura.js"></script>-->
 <!--雪花-->
 <!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/xuehuapiaoluo.js"></script>-->
+<!--  <script src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/js/snowfall.jquery.js"></script>-->
 <!--禁止按键-->
 <!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>-->
 <!--看板娘-->
   <script src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/autoload.js"></script>
 
   <script>
-    document.onreadystatechange = function () {
-      if (document.readyState === 'complete'){
-        $('.loader').remove();
-        //$('body').css('overflow','auto');
-      }
+    let tag = true;
+    if (tag){
+      document.onreadystatechange = function () {
+        if (document.readyState === 'complete'){
+          $('.ele-container').remove();
+          //$('body').css('overflow','auto');
+        }
+      };
+      tag = false;
     }
   </script>
 </body>

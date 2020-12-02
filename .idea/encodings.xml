@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/source/game/pages/chess/js/AI.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/source/game/pages/chess/js/common.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/source/game/pages/chess/js/gambit.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/source/game/pages/chess/js/play.js" charset="GBK" />
+  </component>
+</project>

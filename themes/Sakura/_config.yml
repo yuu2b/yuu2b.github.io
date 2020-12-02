@@ -1,6 +1,6 @@
 # site name
-prefixName: さくら荘その
-siteName: yuu
+prefixName: Sleeplessness
+siteName:
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
@@ -11,7 +11,7 @@ pjax: 1
 # 1开启
 mathjax: 1
 
-notice: 哈哈哈
+notice: yestice
 lazyloadImg: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/loader/orange.progress-bar-stripe-loader.svg
 
 menus:
@@ -27,7 +27,8 @@ menus:
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
-    图集: {path: /tags/图集/, fa: fa-photo }
+    图集: {path: /tags/图集/, fa: fa-photo },
+    趣物: {path: /game/, fa: fa-cube }
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
@@ -57,13 +58,13 @@ bg:
   - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(7).jpg.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
-bgclass:
+bgclass: filter-dot
 
 # startdash url, title, desc img
 startdash: 
   - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
   - {url: https://space.bilibili.com/37508958, title: Bilibili, desc: 博主的b站, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: 点我, desc: 刷新, img: /img/startdash/wangshiwu.jpg}
+  - {url: https://www.html5tricks.com/demo/pure-css3-meteor-shower/index.html, title: 流星雨, desc: 施工中, img: /img/startdash/wangshiwu.jpg}
 
 
 

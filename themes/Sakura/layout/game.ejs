@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/game.css">
+<div class="pattern-center-blank"></div>
+<div id="content" class="site-content">
+    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+        <header class="page-header"><h1 class="cat-title">小趣物</h1> <span class="cat-des"><p>无聊就来玩玩</p></span></header>
+        <% if (page.game) { %>
+            <div class="game">
+                <div class="row" id="rootRow">
+                    <% (page.game||[]).forEach(function (game, index) { %>
+                        <div class="col s12 m6" id="game-<%- index %>">
+                            <div class="card" onclick="window.open('<%- game.link %>')">
+                                <div class="card-pic">
+                                    <img class="game-pic lazyload" src="<%- game.img %>" onerror="javascript: this.src='https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/other/image-404.png'">
+                                </div>
+                                <div class="card-text">
+                                    <span><%- game.title %></span>
+                                </div>
+                            </div>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+        <% } %>
+    </article>
+</div>
