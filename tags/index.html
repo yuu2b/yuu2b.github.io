@@ -38,8 +38,8 @@
   mashiro_option.site_name = "Sleeplessness";
   mashiro_option.author_name = "";
   mashiro_option.site_url = "https://nzynl.top";
-  mashiro_option.v_appId = "OVpFcstylRgjfpUaV1Pi4nE0-9Nh9j0Va";
-  mashiro_option.v_appKey = "6sNPL9IFrjh0fscHTfH2xXLV";
+  mashiro_option.v_appId = "a0VFqbPwuyXgQfEs8MEMQhic-MdYXbMMI";
+  mashiro_option.v_appKey = "SNs53h5EG1AqPGbfv64YtYTs";
   mashiro_option.mathjax = "1";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
@@ -656,14 +656,17 @@
         <div id="tag-wordcloud" class="card-content"></div>
     </div>
 </div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/jqcloud-1.0.4.js"></script>
 <script type="text/javascript">
-    
+    // setTimeout(function () {
+        
 
-    $('#tag-wordcloud').jQCloud([{"text":"悦读","weight":1,"link":"/ https://nzynl.top/tags/悦读/"},{"text":"blog","weight":1,"link":"/ https://nzynl.top/tags/blog/"},{"text":"开场白","weight":1,"link":"/ https://nzynl.top/tags/开场白/"}], {
-        autoResize: true
-    });
+        $('#tag-wordcloud').jQCloud([{"text":"悦读","weight":1,"link":"https://nzynl.top/tags/悦读/"},{"text":"blog","weight":1,"link":"https://nzynl.top/tags/blog/"},{"text":"开场白","weight":1,"link":"https://nzynl.top/tags/开场白/"}] , {
+            autoResize: true
+        });
+    // },500)
 </script>
 </main>
     </div>    
@@ -1183,8 +1186,11 @@ $(document).ready(function() {
 <!--看板娘-->
   <script src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/autoload.js"></script>
 <!--预加载-->
-<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>
-  <script>
+<!--<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>-->
+<!--评论-->
+<script src="/js/Valine.min.js"></script>
+<!--daoVoice-->
+<script>
     daovoice('init', {
       app_id: "52d98a07",
       user_id: "NO_89757", // 必填: 该用户在您系统上的唯一ID
@@ -1197,7 +1203,7 @@ $(document).ready(function() {
       app_id: "52d98a07"
     });
     daovoice('update');
-
+// 输入框跟随评论
     $(document).ready(function(){
       $('.vemoji-btn').text('😀');
       $("#vcomments").on('click', 'span.vat',function(){
@@ -1205,7 +1211,7 @@ $(document).ready(function() {
         $('textarea#veditor').focus();
       })
     })
-
+// 加载完毕去掉loader
     let tag = true;
     if (tag){
       document.onreadystatechange = function () {
@@ -1216,6 +1222,6 @@ $(document).ready(function() {
       };
       tag = false;
     }
-  </script>
+</script>
 </body>
 </html>
