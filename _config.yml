@@ -89,7 +89,7 @@ backup:
   type: git
   message: my blog
   repository:
-    #github: https://github.com/yuu2b/yuu2b.github.io.git,backup
+    github: https://github.com/yuu2b/yuu2b.github.io.git,backup
     coding: https://e.coding.net/yuu2b/yuu2b/yuu2b.git,master
 
 #RSS
