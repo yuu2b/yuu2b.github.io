@@ -77,8 +77,33 @@
 <!--  <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/noSomeKey.js"></script>-->
 <!--看板娘-->
   <script src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/live2d-widget/autoload.js"></script>
-
-  <script>
+<!--预加载-->
+<!--<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>-->
+<!--评论-->
+<script src="/js/Valine.min.js"></script>
+<!--daoVoice-->
+<script>
+    daovoice('init', {
+      app_id: "52d98a07",
+      user_id: "NO_89757", // 必填: 该用户在您系统上的唯一ID
+      email: "1070177565@qq.com", // 选填:  该用户在您系统上的主邮箱
+      name: "sleeplessness", // 选填: 用户名
+      signed_up: 1449821660 // 选填: 用户的注册时间，用Unix时间戳表示
+    });
+    daovoice('update');
+    daovoice('init', {
+      app_id: "52d98a07"
+    });
+    daovoice('update');
+// 输入框跟随评论
+    $(document).ready(function(){
+      $('.vemoji-btn').text('😀');
+      $("#vcomments").on('click', 'span.vat',function(){
+        $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+        $('textarea#veditor').focus();
+      })
+    })
+// 加载完毕去掉loader
     let tag = true;
     if (tag){
       document.onreadystatechange = function () {
@@ -89,6 +114,6 @@
       };
       tag = false;
     }
-  </script>
+</script>
 </body>
 </html>

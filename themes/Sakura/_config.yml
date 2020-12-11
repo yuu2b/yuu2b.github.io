@@ -16,14 +16,14 @@ lazyloadImg: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/loader/orange.progress-ba
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+  归档: { path: /archives/, fa: fa-archive faa-shake, submenus: {
     技术: {path: /categories/技术/, fa: fa-code }, 
     英文: {path: /categories/英文/, fa: fa-file-text-o },
     资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     随想: {path: /categories/随想/, fa: fa-commenting-o },
     转载: {path: /categories/转载/, fa: fa-book }
   } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+  清单: { path: /tags/, fa: fa-list-ul faa-vertical, submenus: {
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
@@ -48,14 +48,14 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(0).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(1).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(2).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(3).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(4).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(5).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(6).jpg.webp
-  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/(7).jpg.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/1.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/2.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/3.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/4.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/5.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/6.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/7.webp
+  - https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/cover/8.webp
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: filter-dot
@@ -112,6 +112,6 @@ aplayer:
 
 # Valine
 valine: true
-v_appId: OVpFcstylRgjfpUaV1Pi4nE0-9Nh9j0Va
-v_appKey: 6sNPL9IFrjh0fscHTfH2xXLV
+v_appId: a0VFqbPwuyXgQfEs8MEMQhic-MdYXbMMI
+v_appKey: SNs53h5EG1AqPGbfv64YtYTs
 

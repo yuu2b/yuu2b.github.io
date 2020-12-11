@@ -4,11 +4,13 @@
   window.onload = function(){
       var valine = new Valine();
       valine.init({
-        el: '#vcomments',
-        appId: "<%= theme.v_appId %>",
-        appKey: "<%= theme.v_appKey %>",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+          el: '#vcomments',
+          appId: "<%= theme.v_appId %>",
+          appKey: "<%= theme.v_appKey %>",
+          path: window.location.pathname,
+          placeholder: "你是我一生只会遇见一次的惊喜 ...",
+          notify: true,
+          verify: false
       })
   }
 </script>

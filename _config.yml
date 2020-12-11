@@ -87,9 +87,10 @@ deploy:
 # backup
 backup:
   type: git
-  message: backup my blog of https://yuu2b.github.io/
+  message: my blog
   repository:
     github: https://github.com/yuu2b/yuu2b.github.io.git,backup
+    coding: https://e.coding.net/yuu2b/yuu2b/yuu2b.git
 
 #RSS
 feed:
