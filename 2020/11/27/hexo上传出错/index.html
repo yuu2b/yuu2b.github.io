@@ -435,7 +435,7 @@ error: failed to execute prompt script (exit code 1)
 fatal: could not read Username for &#39;https://github.com&#39;: No such file or directory
 FATAL Something&#39;s wrong. Maybe you can find the solution here: https://hexo.io/docs/troubleshooting.html
 </code></pre><p>因为之前都是正常的，应该不是我瞎操作导致的。网上查过一遍后发现删除.git .git_deploy 文件夹等方法均不能解决问题。然后我用小乌龟上传文件测试发现git还是会弹出登陆窗口，输入密码后似乎还是会产生错误，因为之后小乌龟又弹出了连接github的账户密码输入框。到此我基本判断是git出问题了。正巧<strong>此时我收到一封邮件</strong>：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/hexo上传出错/1.jpg" alt="github邮件"><br>啊这，我回想了一下我的git是一年前装的，那就升级一下吧。于是安装好最新的git后成功解决。特此记录一下。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/blog/hexo上传出错/1.jpg" alt="github邮件"><br>啊这，我回想了一下**我的git是一年前装的，那就升级一下吧。于是安装好最新的git后成功解决。特此记录一下。</p>
 
         </div>
         <!-- .entry-content -->
@@ -554,14 +554,19 @@ FATAL Something&#39;s wrong. Maybe you can find the solution here: https://hexo.
         <img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/other/wordpress-rotating-ball-o.svg">
         <img src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/other/disqus-preloader.svg">
       </div>
-      <p style="color: #666666;">&copy 2020 </p>
+      <p style="color: #666666;">
+        <a href="http://www.beian.gov.cn/" target="_blank">蜀ICP备20014787号-1</a>
+        &copy 2020
+      </p>
     </div>
     <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
         <span style="color: #b9b9b9;">
-          Theme <a class="Sakura" href="https://github.com/mashirozx/Sakura" target="_blank">Sakura</a>
+          <a class="Sakura" href="https://docs.hojun.cn/sakura/docs" target="_blank">Sakura</a>
           <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i>
-          Powered by <a class="gp" href="https://pages.github.com/" target="_blank">Github Pages</a>
+          <a class="gp" href="https://hexo.io/zh-cn/" target="_blank">Hexo</a>
+          <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i>
+          <a class="gp" href="https://pages.github.com/" target="_blank">Github Pages</a>
         </span>
       </p>
 <!--      <访客数-->
@@ -573,7 +578,7 @@ FATAL Something&#39;s wrong. Maybe you can find the solution here: https://hexo.
     </div>
     <div class="changeSkin-gear no-select">
       <div class="keys">
-        <span id="open-skinMenu">
+        <span id="open-skinMenu" style="margin-right: 55px !important;">
 		<i class="iconfont icon-gear inline-block rotating"></i>&nbsp; 切换主题 | SCHEME TOOL
         </span>
       </div>
