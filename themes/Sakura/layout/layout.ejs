@@ -1,35 +1,5 @@
 <%- partial('_partial/head') %>
 <body class="page-template page-template-user page-template-page-analytics page-template-userpage-analytics-php page page-id-1297 chinese-font serif isWebKit">
-
-<!--  <div class="loader loader-ball is-active" shadow></div>-->
-<div class="ele-container">
-  <div class="ele-wrapper">
-    <div class="ele-tail"></div>
-    <div class="ele-body">
-      <div class="ele-head">
-        <div class="ele-eyebrows"></div>
-        <div class="ele-eyes"></div>
-        <div class="ele-mouth"></div>
-        <div class="ele-fang-front"></div>
-        <div class="ele-fang-back"></div>
-        <div class="ele-ear"></div>
-      </div>
-    </div>
-    <div class="ele-leg-1 ele-leg-back">
-      <div class="ele-foot"></div>
-    </div>
-    <div class="ele-leg-2 ele-leg-front">
-      <div class="ele-foot"></div>
-    </div>
-    <div class="ele-leg-3 ele-leg-back">
-      <div class="ele-foot"></div>
-    </div>
-    <div class="ele-leg-4 ele-leg-front">
-      <div class="ele-foot"></div>
-    </div>
-  </div>
-</div>
-
   <div class="scrollbar" id="bar"></div>
   <a href="#" class="cd-top faa-float animated"></a>
   <section id="main-container">
@@ -80,21 +50,8 @@
 <!--预加载-->
 <!--<script src="//instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw"></script>-->
 <!--评论-->
-<script src="/js/Valine.min.js"></script>
-<!--daoVoice-->
+<script src="https://cdn.jsdelivr.net/gh/yuu2b/cdn/js/Valine.min.js"></script>
 <script>
-    daovoice('init', {
-      app_id: "52d98a07",
-      user_id: "NO_89757", // 必填: 该用户在您系统上的唯一ID
-      email: "1070177565@qq.com", // 选填:  该用户在您系统上的主邮箱
-      name: "sleeplessness", // 选填: 用户名
-      signed_up: 1449821660 // 选填: 用户的注册时间，用Unix时间戳表示
-    });
-    daovoice('update');
-    daovoice('init', {
-      app_id: "52d98a07"
-    });
-    daovoice('update');
 // 输入框跟随评论
     $(document).ready(function(){
       $('.vemoji-btn').text('😀');
@@ -104,16 +61,16 @@
       })
     })
 // 加载完毕去掉loader
-    let tag = true;
-    if (tag){
-      document.onreadystatechange = function () {
-        if (document.readyState === 'complete'){
-          $('.ele-container').remove();
-          //$('body').css('overflow','auto');
-        }
-      };
-      tag = false;
-    }
+//     let tag = true;
+//     if (tag){
+//       document.onreadystatechange = function () {
+//         if (document.readyState === 'complete'){
+//           $('.ele-container').remove();
+//           //$('body').css('overflow','auto');
+//         }
+//       };
+//       tag = false;
+//     }
 </script>
 </body>
 </html>
