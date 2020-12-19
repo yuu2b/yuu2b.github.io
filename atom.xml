@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/%20https://nzynl.top/"/>
-  <updated>2020-12-11T04:28:47.278Z</updated>
+  <updated>2020-12-19T12:15:22.367Z</updated>
   <id>/ https://nzynl.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring boot profile</title>
+    <link href="/%20https://nzynl.top/2020/12/19/spring-boot-profile/"/>
+    <id>/ https://nzynl.top/2020/12/19/spring-boot-profile/</id>
+    <published>2020-12-19T11:23:40.000Z</published>
+    <updated>2020-12-19T12:15:22.367Z</updated>
+    
+    <summary type="html">
+    
+      spring boot profile配置和启动时no active profile set, falling back to default profiles: default的问题
+    
+    </summary>
+    
+      <category term="转载" scheme="/%20https://nzynl.top/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+      <category term="spring-boot" scheme="/%20https://nzynl.top/tags/spring-boot/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo上传出错</title>
