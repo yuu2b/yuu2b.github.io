@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/%20https://nzynl.top/"/>
-  <updated>2020-12-19T12:15:22.367Z</updated>
+  <updated>2020-12-23T06:18:04.860Z</updated>
   <id>/ https://nzynl.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>spring-boot学习笔记1</title>
+    <link href="/%20https://nzynl.top/2020/12/23/spring-boot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01/"/>
+    <id>/ https://nzynl.top/2020/12/23/spring-boot学习笔记1/</id>
+    <published>2020-12-23T06:03:17.000Z</published>
+    <updated>2020-12-23T06:18:04.860Z</updated>
+    
+    <summary type="html">
+    
+      spring boot学习笔记
+    
+    </summary>
+    
+      <category term="技术" scheme="/%20https://nzynl.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="spring-boot" scheme="/%20https://nzynl.top/tags/spring-boot/"/>
+    
+  </entry>
   
   <entry>
     <title>spring boot profile</title>
