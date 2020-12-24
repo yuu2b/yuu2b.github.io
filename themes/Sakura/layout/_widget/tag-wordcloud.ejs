@@ -11,20 +11,17 @@
         <div id="tag-wordcloud" class="card-content"></div>
     </div>
 </div>
-<!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/jqcloud-1.0.4.js"></script>
 <script type="text/javascript">
-    // setTimeout(function () {
         <%
         let tagWordArr = [];
         site.tags.map(function(tag) {
             tagWordArr.push({'text': tag.name, 'weight': tag.length, 'link': tag.permalink.substr(2)});
         });
-
         let tagWords = JSON.stringify(tagWordArr);
         %>
-
+    // setTimeout(function () {
         $('#tag-wordcloud').jQCloud(<%- tagWords %> , {
             autoResize: true
         });

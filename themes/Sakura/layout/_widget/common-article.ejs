@@ -8,7 +8,7 @@
     </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      <%- post.title %></h1>
+        <%- post.title %></h1>
       <p class="entry-census">
         <span>
           <a href="<%- post.authorLink%>">
@@ -22,7 +22,7 @@
         ·</span>
         <%= date(post.date, 'YYYY-M-D') %><span class="bull">
         ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+        <span id="busuanzi_value_page_pv"></span>次阅读</p>
     </header>
   </div>
 <% } %>
@@ -36,7 +36,6 @@
           <header class="entry-header">
             <h1 class="entry-title"><%- post.title %></h1>
             <p class="entry-census"><%- post.author %>&nbsp;·&nbsp;<%= date(post.date, 'YYYY-M-D') %>&nbsp;·&nbsp;<span id="busuanzi_value_page_pv"></span>次阅读</p></p>
-
             <hr>
           </header>
         <% } %>
@@ -70,10 +69,10 @@
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
           <% if (post.next) { %>
-            <div class="post-nepre half previous"></div>
+        <div class="post-nepre half previous">
           <% } else { %>
-            <div class="post-nepre full previous">
-          <% } %>
+          <div class="post-nepre full previous">
+            <% } %>
             <a href="<%- url_for(post.prev.path) %>" rel="prev">
               <div class="background">
                 <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.prev.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.prev.photos[0]%>">
@@ -82,32 +81,32 @@
               Previous Post</span>
               <div class="info">
                 <h3>
-                <%= post.prev.title%></h3>
-                <hr>
-              </div>
-            </a>
-            </div>
-        <% } %>
-        <% if (post.next){ %>
-          <% if (post.prev) { %>
-              <div class="post-nepre half next"></div>
-          <% } else { %>
-          <div class="post-nepre full next">
-          <% } %>
-            <a href="<%- url_for(post.next.path) %>" rel="next">
-              <div class="background">
-                <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
-              </div>
-              <span class="label">
-              Next Post</span>
-              <div class="info">
-                <h3>
-                <%= post.next.title%></h3>
+                  <%= post.prev.title%></h3>
                 <hr>
               </div>
             </a>
           </div>
-        <% } %>
+          <% } %>
+          <% if (post.next){ %>
+            <% if (post.prev) { %>
+          <div class="post-nepre half next">
+            <% } else { %>
+            <div class="post-nepre full next">
+              <% } %>
+              <a href="<%- url_for(post.next.path) %>" rel="next">
+                <div class="background">
+                  <img class="lazyload" src="<%- theme.lazyloadImg%>" data-src="<%- post.next.photos[0]%>" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="<%- post.next.photos[0]%>">
+                </div>
+                <span class="label">
+              Next Post</span>
+                <div class="info">
+                  <h3>
+                    <%= post.next.title%></h3>
+                  <hr>
+                </div>
+              </a>
+            </div>
+            <% } %>
       </section>
       <%- partial('_partial/comment') %>
       <section class="author-profile">
@@ -116,7 +115,7 @@
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
+              <a href="<%- post.authorLink%>" itemprop="url" rel="author"><%- post.author %></a>
             </h3>
           </div>
         </div>

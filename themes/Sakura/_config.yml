@@ -28,10 +28,10 @@ menus:
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
     图集: {path: /tags/图集/, fa: fa-photo },
-    趣物: {path: /game/, fa: fa-cube }
+    游戏: {path: /game/, fa: fa-cube }
   } }
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  友人帐: { path: /links/, fa: fa-link faa-shake }
+  友链: { path: /links/, fa: fa-link faa-shake }
 #  赞赏: { path: /donate/, fa: fa-heart faa-pulse }
   关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
@@ -61,8 +61,8 @@ bg:
 bgclass: filter-dot
 
 # startdash url, title, desc img
-startdash: 
-  - {url: /theme-sakura/, title: Sakura, desc: 本站 hexo 主题, img: /img/startdash/sakura.md.png}
+startdash:
+  - {url: /web/, title: 网站推荐, desc: 一些好用、有趣的网站推荐, img: /img/startdash/site.jpg}
   - {url: https://space.bilibili.com/37508958, title: Bilibili, desc: 博主的b站, img: /img/startdash/bilibili.jpg}
   - {url: https://www.html5tricks.com/demo/pure-css3-meteor-shower/index.html, title: 流星雨, desc: 施工中, img: /img/startdash/wangshiwu.jpg}
 

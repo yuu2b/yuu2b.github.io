@@ -5,7 +5,6 @@ date: 2020-10-12 20:58:06
 keywords: 
 description: 
 comments: false
-photos: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/banner/game.jpg
 game:
     - title: 动物棋
       img: https://cdn.jsdelivr.net/gh/yuu2b/cdn/img/game/animal.jpg
