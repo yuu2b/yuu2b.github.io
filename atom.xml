@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/%20https://nzynl.top/"/>
-  <updated>2020-12-23T06:18:04.860Z</updated>
+  <updated>2020-12-31T03:52:57.867Z</updated>
   <id>/ https://nzynl.top/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>打印机共享问题</title>
+    <link href="/%20https://nzynl.top/2020/12/31/%E6%89%93%E5%8D%B0%E6%9C%BA%E5%85%B1%E4%BA%AB%E9%97%AE%E9%A2%98/"/>
+    <id>/ https://nzynl.top/2020/12/31/打印机共享问题/</id>
+    <published>2020-12-31T02:26:43.000Z</published>
+    <updated>2020-12-31T03:52:57.867Z</updated>
+    
+    <summary type="html">
+    
+      解决Windows共享打印机遇到的问题
+    
+    </summary>
+    
+      <category term="技术" scheme="/%20https://nzynl.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="电脑" scheme="/%20https://nzynl.top/tags/%E7%94%B5%E8%84%91/"/>
+    
+  </entry>
   
   <entry>
     <title>spring-boot学习笔记1</title>
